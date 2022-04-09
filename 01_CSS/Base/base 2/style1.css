@@ -1,0 +1,26 @@
+   body{
+    font-family: serif;
+    font-size: 14px;
+    }
+   h2 {
+        text-align: right;
+   }
+   .addr {
+        font-style: italic;
+   } 
+   .dd_who {
+        text-align: right;
+        margin: 0;
+   }
+   .name {
+        text-align: left;
+        text-decoration: underline; 
+        font-weight: 900;
+        font-style: italic;
+   }
+   .let_text {
+        text-align: justify;
+        font-family:'Lucida Sans';
+        font-style: italic;
+        font-size: 13px;
+   } 
