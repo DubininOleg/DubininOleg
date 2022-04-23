@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Домашнее задание</title>
+</head>
+<body>
+<h1>Заполните анкету</h1>
+<form id="Inq" name="Private_info1"  method="post" action="http://fe.it-academy.by/TestForm.php">
+ <fieldset>
+  <legend>Личные данные</legend>
+        <INPUT TYPE="text"  NAME="Name1" placeholder="Фамилия" maxlength="25" pattern="^[А-Яа-яЁё]+$" form="Inq" required autofocus> * Фамилия<br>
+        <INPUT TYPE="text"  NAME="Name2" placeholder="Имя" maxlength="20" pattern="^[А-Яа-яЁё]+$" form="Inq" required> * Имя<br>
+        <INPUT TYPE="text"  NAME="Name3" placeholder="Отчество" maxlength="24" pattern="^[А-Яа-яЁё]+$" form="Inq" required> * Отчество<br>    
+   <fieldset>
+    <legend>Паспортные данные</legend>
+    <INPUT TYPE="text"  NAME="Pasp1" placeholder="Серия" pattern="[A-Z]{2}" form="Inq" required> * Серия<br>
+    <INPUT TYPE="text"  NAME="Pasp2" placeholder="Имя"  pattern="[0-9]{7}" form="Inq" required> * Номер <br>
+   </fieldset>
+    <fieldset>
+     <legend>Дата рождения</legend>
+     <INPUT TYPE="text"  NAME="Year_b" placeholder="2000" pattern="[0-9]{4}" form="Inq" required> Год рождения<br>
+     <select size="2" Name="Month_b" form="Inq"> Месяц рождения <br>
+            <option value="Январь">Январь</option>
+            <option value="Февраль">Февраль</option>
+            <option value="Март">Март</option>
+            <option value="Апрель">Апрель</option>
+            <option value="Май">Май</option>
+            <option value="Июнь">Июнь</option>
+            <option value="Июль">Июль</option>
+            <option value="Август">Август</option>
+            <option value="Сентябрь">Сентябрь</option>
+            <option value="Октябрь">Октябрь</option>
+            <option value="Ноябрь">Ноябрь</option>
+            <option value="Декабрь">Декабрь</option>
+     </select> <br>
+     <INPUT type="number" name="Date_b" value="01" min="1" max="31" step="1" required form="Inq" > Дата рождения<br>  
+    </fieldset>
+        <select size="3" Name="Nat" form="Inq"> 
+        <option value="Беларусь">BY</option>
+        <option value="Украина">UA</option>
+        <option value="Россия">RU</option>
+        <option value="Польша">PL</option>
+    </select> Национальность <br>
+    <p>Адрес</p>
+    <textarea rows="3" cols="20" name="Adress" lang="ru"></textarea> <br>
+ </fieldset>
+     <fieldset> <legend>Интересы</legend>
+       <fieldset> <legend>Хобби</legend>
+        <input type="checkbox" name="hobby" value="a1" form="Inq">Рыбалка<Br>
+        <input type="checkbox" name="hobby" value="a2" form="Inq">Астрономия<Br>
+        <input type="checkbox" name="hobby" value="a3" form="Inq">Дайвинг<Br>    
+        <input type="checkbox" name="hobby" value="a4" form="Inq">Марки<Br> 
+       </fieldset> 
+
+       <fieldset><legend>Домашние животные</legend>
+        <select name="Animals" form="Inq">
+         <optgroup label="Попугаи">
+               <option value="1">Волнистый</option>
+               <option value="2">Ара</option>
+               <option value="3">Неразлучник</option>
+         </optgroup>
+         <optgroup label="Рыба">
+               <option value="4">Караси</option>
+               <option value="5">Окуни</option>
+               <option value="6">Осетр</option>
+         </optgroup>
+         <optgroup label="Птицы">
+               <option value="7">Стая ворон</option>
+               <option value="8">Аист</option>
+               <option value="9">Чайка</option>
+         </optgroup>
+         </select>
+       </fieldset>
+    </fieldset>
+    <fieldset><legend>Данные для входа и восстановления пароля</legend>
+                <label for=“login”> </label> 
+                <INPUT TYPE="text" required ID="login" NAME="login" form="Inq" pattern="[A-Za-z]{5,}" maxlength="20">* Логин<br>
+                <label for=“pass”>  </label> 
+                <INPUT TYPE="password" required ID="pass" NAME="password" form="Inq" pattern="[A-Za-z]{10,}" maxlength="20" autocomplete="off" >* Пароль<br>
+    </fieldset>
+
+    <fieldset><legend>Координаты</legend>
+     <input type="email" name="email" placeholder="Введите адрес электронной почты" required form="Inq">* e-mail <br>
+     <input type="url" name="url" placeholder="Введите сайт" required form="Inq">* сайт <br>
+    </fieldset>
+
+    <fieldset><legend>Цифры</legend>
+     <INPUT type="number" name="Numb1" value="0" min="-2.5" max="2.5" step="0.1" form="Inq" > Диапазон от -2.5 до 2.5<br>   
+    <input type="range" name="Numb2" value="5" min="1" max="10" step="1" form="Inq"> От 1 до 10 <br>
+    </fieldset>
+
+    <fieldset><legend>Кнопки управления</legend>
+     <input type="submit" value="Отправить" form="Inq">
+     <input type="reset" value="Сбросить" form="Inq"><br>
+     <button><img src="mail.gif" alt="Письмо"></button>
+    </fieldset>   
+
+ </fieldset> 
+    
+</form>
+</body>
+</html>

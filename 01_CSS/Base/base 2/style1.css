@@ -1,4 +1,7 @@
-   body{
+
+    @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+
+      body{
     font-family: serif;
     font-size: 14px;
     }
@@ -20,7 +23,6 @@
    }
    .let_text {
         text-align: justify;
-        font-family:'Lucida Sans';
-        font-style: italic;
+        font-family:'Bad Script', cursive;
         font-size: 13px;
    } 
